@@ -1,0 +1,15 @@
+<%= form_for search_path, method: :get do |f| %>
+  <p>
+    <%= f.label t(".search_for") %>
+    <%= text_field_tag :query, params[:query] %>
+    <%= submit_tag t(".search"), name: nil %>
+  </p>
+<% end %>
+<div class="row">
+  <ul class="all_books">
+    <% @book.each do |book| %>
+      <%= render "books/book", book: book %>
+    <% end %>
+  </ul>
+  <p><%= will_paginate @book %></p>
+</div>

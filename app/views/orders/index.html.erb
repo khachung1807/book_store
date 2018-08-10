@@ -1,0 +1,37 @@
+<% provide :title, "Quan ly don hang" %>
+<div class="container text-center">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th><%= "Cart ID" %></th>
+            <th><%= "User ID" %></th>
+            <th><%= "Total Price" %></th>
+            <th><%= "Created At" %></th>
+            <th><%= "Updated At" %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @orders.each do |order| %>
+            <tr>
+              <td><%= order.cart_id %></td>
+              <td><%= order.user_id %></td>
+              <td><%= order.total_price %></td>
+              <td><%= order.created_at %></td>
+              <td><%= order.updated_at %></td>
+            </tr>
+          <% end %>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="4"><%= "Tong so don hang" %></th>
+            <td><%= @orders.count %></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>
+
+

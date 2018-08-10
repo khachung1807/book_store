@@ -1,0 +1,204 @@
+en:
+  lang_en: "English"
+  lang_vi: "Vietnamese"
+  title_full: "BukStore"
+  home_title: "Home"
+  about_title: "About"
+  help_title: "Help"
+  contact_title: "Contact"
+  sign_up: "Sign Up"
+  sign_in: "Sign In"
+  cart: " Cart"
+  welcome: "Welcome to the BukStore"
+  account_activation: "Account activation"
+  account_activated: "Account activated!"
+  account_activate_invalid: "Invalid activation link"
+  activation_message1: "Account not activated. "
+  activation_message2: "Check your email for the activation link."
+  activation_mesage: "Please check your email to activate your account."
+  reset_password: "Password reset"
+  reset_password_mail: "Email sent with password reset instructions"
+  reset_password_error: "Email address not found"
+  reset_password_success: "Password has been reset."
+  reset_password_failed: "can't be empty"
+  reset_password_timeout: "Password reset has expired."
+  not_found: "User not found!"
+  profile: "Profile"
+  update: "Update Profile"
+  settings: "Settings"
+  signout: "Sign out"
+  delete_cart: "Delete cart success!!!"
+  delete_cart_item: "Delete cart item success!!!"
+  thankyou: "Thank you for purchase, we will contact you soon!!!"
+  log_msg: "Please log in."
+  history_order: "History Orders"
+  layouts:
+    header:
+      nav_all: "All Books"
+      deal: "Deals"
+    admin:
+      user_list: "All users"
+      stastitics: "Stastitics"
+    employee:
+      order_list: "Orders"
+      add_book: "Add book"
+      profile: "Profile"
+      update: "Update Profile"
+      settings: "Settings"
+      signout: "Sign out"
+      purchase_history: "Purchase History"
+    footer:
+
+  sessions:
+    new:
+      p1: "New user?"
+      sign_up: "Sign up now!"
+      login_password: "Password"
+      forgot_password: "Forgot your password?"
+      remember_me: "Remember me on this computer"
+    create:
+      error_signin: "Invalid email/password combination"
+
+  shared:
+    error_messages:
+      error_txt1: "The form contains"
+      error_txt2: "error"
+
+  static_pages:
+    home:
+      detail: "Book details"
+  users:
+    title_sample: "Welcome to the Sample App!"
+    index:
+      user_list: "All users"
+      delete: "Delete"
+      detail: "Detail"
+      sure: "Are you sure?"
+      add_employee: "New Employee"
+      not_admin: "You are not the admin!"
+    new:
+      sign_up: "Sign up "
+      create: "Create my account"
+    create:
+      create_failed: "Errors, Create failed"
+      not_found: "User not found"
+    edit:
+      edit_title: "Edit user"
+      edit_txt1: "Update your profile"
+      edit_txt2: "Change"
+      edit_submit: "Save changes"
+      wrong_user_msg: "You can not edit other's profile"
+    update:
+      update_success: "Profile updated"
+    destroy:
+      delete_success: "User deleted"
+    form:
+      error: "error "
+      form_container: "The form contains "
+      sign_up: "Sign up "
+      content_sigup: "This will be a signup page for new users. "
+      create: "Create my account"
+      name: "Name"
+      gender: "Gender"
+      birthday: "Birthday"
+      address: "Address"
+      phone_number: "Phone Number"
+      card_number: "Card Number"
+      email: "Email"
+      password: "Password"
+      confirmation: "Confirmation Password"
+      gender_male: "Male"
+      gender_female: "FeMale"
+      gender_other: "Other"
+    add_employee:
+      addemployee_title: "Add Employee"
+      addemployee_submit: "Add"
+      user_type: "User type"
+      name: "Name"
+      gender: "Gender"
+      birthday: "Birthday"
+      address: "Address"
+      phone_number: "Phone Number"
+      card_number: "Card Number"
+      email: "Email"
+      password: "Password"
+      confirmation: "Confirmation Password"
+      gender_male: "Male"
+      gender_female: "FeMale"
+      gender_other: "Other"
+  shared:
+    error_messages:
+      error: "error"
+      form_container: "The form contains "
+  activerecord:
+    attributes:
+      user:
+        genders:
+          male: Male
+          female: Female
+          trans: Trans
+  date:
+    formats:
+      default: ! "%d/%m/%Y"
+  datetime:
+      formats:
+        default: ! "%d/%m/%Y %H:%M"
+  books:
+    show_all_books:
+      all_books: "All Books"
+    book:
+      add_to_cart: "Add to Cart"
+  search:
+    search:
+      all_books: "All Books"
+      search: "Search"
+      search_for: "Search for"
+  add_to_cart: "Add to Cart"
+  user_mailer:
+    account_activation:
+      title: "BukStore"
+      hi: "Hi "
+      welcome: "Welcome to the BukSotre! Click on the link below to activate your account:"
+      active: "Activate"
+    password_reset:
+      title: "Password reset"
+      content: "To reset your password click the link below:"
+      expire: "This link will expire in two hours."
+      footer: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+  password_resets:
+    new:
+      title: "Forgot password"
+      submit: "Submit"
+    edit:
+      title: "Reset password"
+      reset_button: "Update password"
+      password: "Password"
+      confirmation_password: "Confirmation"
+  sub_total: "Sub Total: "
+  proceed_to_checkout: "Proceed to checkout"
+  empty_cart: "Empty Cart"
+  are_you_sure: "Are you sure?"
+  order: "Order"
+  please_back: "There are no items in your shopping cart. Please "
+  go_back: "go back "
+  and_add: "and add some items to your cart."
+  item: "Item"
+  price: "Price"
+  quantity: "Quantity"
+  delete: "Delete"
+  total_price: "Total Price"
+  totals: "Totals"
+  remove: "Remove item"
+  date:
+    formats:
+      default: "%d-%m-%Y"
+      long: "%d %B, %Y"
+      short: "%d %b"
+
+  time:
+    am: "am"
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%d %B, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: "pm"

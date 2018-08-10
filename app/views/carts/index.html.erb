@@ -1,0 +1,15 @@
+<% provide :title, t("cart") %>
+<div class="container text-center">
+  <div>
+    <div class="col-sm-12">
+      <div class="shopping-cart">
+        <h2><%= t "cart" %></h2>
+        <% if logged_in? %>
+          <%= render "carts/cart_logged_in" %>
+        <% else %>
+          <%= render "carts/cart_not_logged_in" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

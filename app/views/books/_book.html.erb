@@ -1,0 +1,29 @@
+<div class="col-md-4 product-men">
+  <li>
+    <div class="men-pro-item simpleCart_shelfItem">
+      <div class="men-thumb-item">
+        <%= link_to image_tag("https://goo.gl/kLoSjg", alt: "Image",
+        class: "img-responsive")%>
+        <div class="men-cart-pro">
+          <div class="inner-men-cart-pro">
+            <%= link_to "Quick View", book_path(book, :id),
+              class: "link-product-add-cart"%>
+          </div>
+        </div>
+        <span class="product-new-top">New</span>
+      </div>
+      <div class="item-info-product ">
+        <h4>
+          <p><%= link_to book.name, book_path(book, :id) %></p>
+          <p><%= link_to book.author, "#" %></p>
+        </h4>
+        <div class="info-product-price">
+          <span class="item_price"><%= number_to_currency book.price %></span>
+          <del>$20.00</del>
+        </div>
+        <%= button_to t("add_to_cart"), cart_items_path(book_id: book.id),
+        class: "btn btn-primary" %>
+      </div>
+    </div>
+  </li>
+</div>

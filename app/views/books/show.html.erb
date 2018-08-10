@@ -1,0 +1,53 @@
+<% provide :title, t("home_title") %>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <%= link_to t(".home"), root_path %>
+          </li>
+          <li class="breadcrumb-item">
+            <%= link_to t(".book"), "#" %>
+          </li>
+          <li class="breadcrumb-item" aria-current="page">
+            <%= @book.name %>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-5 item-photo">
+      <%= link_to image_tag("https://goo.gl/kLoSjg", alt: "Image", class: "img_thumb")%>
+    </div>
+    <div class="col-sm-7 book_info">
+      <h3><%= @book.name %></h3>
+      <h5>
+        <%= t ".by" %>
+        <a href="#" class="author_info"><%= @book.publisher %></a> ·
+      </h5>
+      <h5>
+        <%= t ".author" %>:
+        <a href="#" class="author_info"><%= @book.author %></a> ·
+      </h5>
+      <h3 class="title-price">
+        <small><%= t ".price" %>: </small>
+      </h6>
+      <h3><%= @book.price %></h3>
+      <h3 class="title-price">
+        <small><%= t ".discount" %>: <%= @book.discount %>%</small>
+      </h6>
+      <div class="section">
+        <h3 class="title-description">
+          <small><%= t ".description" %>: </small>
+          <h5><%= @book.description %></h5>
+        </h3>
+      </div>
+      <div class="section btn_add_to_cart">
+        <%= button_to t("add_to_cart"), cart_items_path(book_id: @book.id),
+          class: "btn btn-primary" %>
+      </div>
+    </div>
+  </div>
+</div>

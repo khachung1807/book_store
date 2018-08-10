@@ -1,0 +1,241 @@
+vi:
+  lang_en: "Tiếng Anh"
+  lang_vi: "Tiếng Việt"
+  title_full: "Cửa hàng BukStore"
+  home_title: "Trang chủ"
+  about_title: "Trang giới thiệu"
+  help_title: "Trang hỗ trợ"
+  contact_title: "Trang liên hệ"
+  sign_up: "Đăng kí"
+  sign_in: "Đăng nhập"
+  cart: " Giỏ hàng"
+  welcome: "Chào mừng đến với BukStore"
+  account_activation: "Kích hoạt tài khoản"
+  account_activated: "Tài khoản đã được kích hoạt!"
+  account_activate_invalid: "Đường dẫn kích hoạt không đúng"
+  activation_message1: "Tài khoản chưa được kích hoạt. "
+  activation_message2: "Kiểm tra thư của bạn để có thể kích hoạt."
+  activation_mesage: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản của bạn."
+  reset_password: "Đặt lại mật khẩu"
+  reset_password_mail: "Email được gửi với hướng dẫn đặt lại mật khẩu"
+  reset_password_error: "Địa chỉ email không đúng"
+  reset_password_success: "Mật khẩu đã được đặt lại."
+  reset_password_failed: "không được để trống"
+  reset_password_timeout: "Đặt lại mật khẩu đã hết hạn."
+  not_found: "Không tìm thấy người dùng!"
+  profile: "Tài khoản"
+  update: "Cập nhật tài khoản"
+  settings: "Cài đặt"
+  signout: "Đăng xuất"
+  delete_cart: "Đã xóa giỏ hàng!!!"
+  delete_cart_item: "Đã xóa phần tử!!!"
+  book_not_found: "Không tìm thấy sách!!!"
+  cart_item_not_found: "Không tìm thấy cart item!!!"
+  thankyou: "Cảm ơn bạn đã mua hàng, chúng tôi sẽ sớm liên hệ với bạn!!!"
+  log_msg: "Bạn phải đăng nhập đã!"
+  history_order: "Lịch sử mua hàng"
+  layouts:
+    header:
+      nav_all: "Tất cả sách"
+      deal: "Khuyến mãi"
+    admin:
+      user_list: "Người dùng"
+      stastitics: "Thống kê"
+    employee:
+      order_list: "Đơn hàng"
+      add_book: "Thêm sách"
+      profile: "Tài khoản"
+      update: "Cập nhật tài khoản"
+      settings: "Cài đặt"
+      signout: "Đăng xuất"
+      purchase_history: "Lịch sử mua hàng"
+    footer:
+
+  sessions:
+    new:
+      p1: "Người dùng mới?"
+      sign_up: "Đăng kí ngay!"
+      login_password: "Mật khẩu"
+      forgot_password: "Quên mật khẩu?"
+      remember_me: "Nhớ tôi trên máy tính này"
+    create:
+      error_signin: "Sai email hoặc mật khẩu!"
+
+  shared:
+    error_messages:
+      error_txt1: "Mẫu đăng kí chứa"
+      error_txt2: "lỗi"
+
+  static_pages:
+    home:
+      detail: "Mô tả sách"
+
+  users:
+    title_sample: "Chào mừng đến với Ứng dụng mẫu!"
+    index:
+      user_list: "Tất cả người dùng"
+      delete: "Xóa người dùng"
+      detail: "Chi tiết"
+      sure: "Bạn chắc chứ?"
+      add_employee: "Thêm nhân viên mới"
+      not_admin: "Bạn không phải là quản trị viên!"
+    new:
+      sign_up: "Đăng ký"
+      create: "Tạo tài khoản của tôi"
+    create:
+      create_failed: "Lỗi, không thể tạo"
+      not_found: "Không tìm thấy người dùng"
+    edit:
+      edit_title: "Chỉnh sửa hồ sơ"
+      edit_txt1: "Chỉnh sửa hồ sơ "
+      edit_txt2: "Thay đổi"
+      edit_submit: "Lưu thay đổi"
+      wrong_user_msg: "Bạn không thể chỉnh sửa hồ sơ người khác!"
+    update:
+      update_success: "Cập nhật hồ sơ thành công!"
+    destroy:
+      delete_success: "Người dùng đã bị xóa!"
+    form:
+      error: "lỗi "
+      form_container: "Biểu mẫu có chứa "
+      name: "Họ tên"
+      gender: "Giới tính"
+      birthday: "Ngày sinh"
+      address: "Địa chỉ"
+      phone_number: "Số điện thoại"
+      card_number: "Số thẻ ngân hàng"
+      email: "Email"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận lại mật khẩu"
+      gender_male: "Nam"
+      gender_female: "Nữ"
+      gender_other: "Khác"
+    add_employee:
+      addemployee_title: "Thêm nhân viên mới"
+      addemployee_submit: "Thêm"
+      user_type: "Loại người dùng"
+      error: "lỗi "
+      form_container: "Biểu mẫu có chứa "
+      name: "Họ tên"
+      gender: "Giới tính"
+      birthday: "Ngày sinh"
+      address: "Địa chỉ"
+      phone_number: "Số điện thoại"
+      card_number: "Số thẻ ngân hàng"
+      email: "Email"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận lại mật khẩu"
+  shared:
+    error_messages:
+      error: "lỗi"
+      form_container: "Biểu mẫu có chứa "
+
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: " không được để trống"
+            email:
+              blank: " không được để trống"
+              invalid: " không hợp lệ"
+              taken: " đã tồn tại trong hệ thống"
+            password:
+              blank: " không được để trống"
+              too_short: " quá ngắn (tối thiểu 6 ký tự)"
+            birthday:
+              blank: " không được để trống"
+              inclusion: "không đúng"
+            address:
+              blank: " không được để trống"
+            phone_number:
+              blank: " không được để trống"
+              too_short: " quá ngắn (tối thiểu 8 ký tự)"
+              too_long: " quá dài (tối đa 15 ký tự)"
+            card_number:
+              blank: " không được để trống"
+              too_short: " quá ngắn (tối thiểu 10 ký tự)"
+              too_long: " quá dài (tối đa 20 ký tự)"
+            password_confirmation:
+              confirmation: " không khớp"
+    attributes:
+      user:
+        genders:
+          male: Nam
+          female: Nữ
+          trans: Chuyển giới
+        user_types:
+          admin: "Quản trị viên"
+          employee: "Nhân viên"
+          customer: "Khách hàng"
+  date:
+    formats:
+      default: ! "%d/%m/%Y"
+  datetime:
+      formats:
+        default: ! "%d/%m/%Y %H:%M"
+  books:
+    show_all_books:
+      all_books: "Tất cả sách"
+    book:
+  add_to_cart: "Thêm vào giỏ hàng"
+
+  search:
+    search:
+      all_books: "Tất cả sách"
+      search: "Tìm kiếm"
+      search_for: "Tìm kiếm cho"
+
+  will_paginate:
+    next_label: "Tiếp"
+    previous_label: "Trước"
+  user_mailer:
+    account_activation:
+      title: "BukStore"
+      hi: "Chào "
+      welcome: "Chào mừng bạn đến với BukStore! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+      active: "Kích hoạt"
+    password_reset:
+      title: "Đặt lại mật khẩu"
+      content: "Để đặt lại mật khẩu, hãy nhấp vào liên kết bên dưới:"
+      expire: "Liên kết này sẽ hết hạn sau hai giờ nữa."
+      footer: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ vẫn như cũ."
+  password_resets:
+    new:
+      title: "Quên mật khẩu"
+      submit: "Xác nhận"
+    edit:
+      title: "Đặt lại mật khẩu"
+      reset_button: "Cập nhật mật khẩu"
+      password: "Mật khẩu"
+      confirmation_password: "Xác nhận lại"
+  sub_total: "Tổng tiền thanh toán: "
+  proceed_to_checkout: "Tiến hành thanh toán"
+  empty_cart: "Xóa giỏ hàng"
+  are_you_sure: "Bạn chắc chắn chứ?"
+  order: "Đặt hàng"
+  please_back: "Không có phần tử nào trong giỏ hàng, Vui lòng "
+  go_back: "quay trở lại "
+  and_add: "và thêm một số sản phẩm vào giỏ hàng"
+  item: "Sản phẩm"
+  price: "Gía"
+  quantity: "Số lượng"
+  delete: "Xóa"
+  total_price: "Tổng"
+  remove: "Xóa"
+  totals: "Tổng tiền thanh toán"
+  remove: "Xóa"
+  date:
+    formats:
+      default: "%d-%m-%Y"
+      long: "%d %B, %Y"
+      short: "%d %b"
+
+  time:
+    am: "sáng"
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%d %B, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: "chiều"

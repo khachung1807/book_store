@@ -1,0 +1,110 @@
+<footer>
+  <div class="container">
+    <div class="clearfix"></div>
+    <div class="footer-info w3-agileits-info">
+      <div class="col-sm-5 address-right">
+        <div class="col-xs-6 footer-grids">
+          <h3>Categories</h3>
+          <ul>
+            <li>
+              <a href="#">Grocery</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-6 footer-grids agile-secomk">
+          <ul>
+            <li>
+              <a href="#">Snacks & Beverages</a>
+            </li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <!-- //footer categories -->
+      <!-- quick links -->
+      <div class="col-sm-5 address-right">
+        <div class="col-xs-6 footer-grids">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              <%= link_to t("about_title"), about_path %>
+              <li><%= link_to t("contact_title"), contact_path %></li>
+              <li><%= link_to t("help_title"), help_path %></li>
+              <li><%= link_to t("lang_en"), locale:"en" %></li>
+              <li><%= link_to t("lang_vi"), locale:"vi" %></li>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-6 footer-grids">
+          <h3>Get in Touch</h3>
+          <ul>
+            <li>
+              <i class="glyphicon glyphicon-map-marker"></i> 123 Sebastian, USA.</li>
+            <li>
+              <i class="glyphicon glyphicon-earphone"></i> 333 222 3333 </li>
+            <li>
+              <i class="glyphicon glyphicon-phone"></i> +222 11 4444 </li>
+            <li>
+              <i class="glyphicon glyphicon-envelope"></i>
+              <a href="#"> mail@example.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- //quick links -->
+      <!-- social icons -->
+      <div class="col-sm-2 footer-grids  w3l-socialmk">
+        <h3>Follow Us on</h3>
+        <div class="social">
+          <ul>
+            <li>
+              <%= link_to image_tag("facebook.png", all: "", class: "icon-footer") %>
+            </li>
+            <li>
+              <%= link_to image_tag("twiter.png", all: "", class: "icon-footer") %>
+            </li>
+            <li>
+              <%= link_to image_tag("google-plus.png", all: "", class: "icon-footer") %>
+            </li>
+          </ul>
+        </div>
+        <div class="agileits_app-devices">
+          <h5>Download the App</h5>
+          <a href="#">
+            <%= link_to image_tag("google-play.png", all: "") %>
+          </a>
+          <a href="#">
+            <%= link_to image_tag("app-store.png", all: "") %>
+          </a>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="agile-sometext">
+      <div class="sub-some child-momu">
+        <h5>Payment Method</h5>
+        <ul>
+          <li>
+            <%= link_to image_tag("pay2.png", all: "") %>
+          </li>
+          <li>
+            <%= link_to image_tag("pay1.png", all: "") %>
+          </li>
+          <li>
+            <%= link_to image_tag("pay3.png", all: "") %>
+          </li>
+          <li>
+            <%= link_to image_tag("pay7.png", all: "") %>
+          </li>
+          <li>
+            <%= link_to image_tag("pay8.png", all: "") %>
+          </li>
+          <li>
+            <%= link_to image_tag("pay9.png", all: "") %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

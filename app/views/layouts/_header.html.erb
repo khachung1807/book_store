@@ -1,0 +1,154 @@
+
+<div class="header-bot">
+  <div class="header-bot_inner_wthreeinfo_header_mid">
+    <!-- header-bot-->
+    <div class="col-md-3 logo_agile">
+      <h1>
+        <%= link_to root_path, class: "home" do %>
+          <span>B</span>ook
+          <span>S</span>tore
+          <%= link_to image_tag("logo2.png", alt: " ") %>
+        <% end %>
+      </h1>
+    </div>
+    <!-- header-bot -->
+    <div class="col-md-9 header">
+      <!-- header lists -->
+      <ul>
+        <li>
+          <a class="aa" href="#">
+            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Shop Locator</a>
+        </li>
+        <li>
+          <a href="#" data-toggle="modal" data-target="#myModal1">
+            <span class="fa fa-truck" aria-hidden="true"></span>Track Order</a>
+        </li>
+        <li>
+          <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 001 234 5678
+        </li>
+        <% if logged_in? %>
+          <% if @current_user.admin? %>
+            <%= render "layouts/admin" %>
+          <% elsif @current_user.employee? %>
+            <%= render "layouts/employee" %>
+          <% else %>
+            <%= render "layouts/customer" %>
+          <% end %>
+        <% else %>
+          <li>
+            <%= link_to login_path, class: "btn btn-success" do %>
+              <span class="glyphicon glyphicon-log-in"></span>
+              <%= t("sign_in") %>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to signup_path, class: "btn btn-primary" do %>
+              <span class="glyphicon glyphicon-edit"></span>
+              <%= t("sign_up") %>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+      <div class="agileits_search">
+        <%= form_for search_path, method: :get do |f| %>
+          <%= text_field_tag :query, params[:query],
+            placeholder: "Book name, author..." %>
+          <%= button_to "", name: nil, class: "btn btn-default",
+            "aria-label" => "Left Align" do %>
+            <span class="glyphicon glyphicon-search" aria-hidden="true"> </span>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="top_nav_right">
+        <div class="wthreecartaits wthreecartaits2 cart cart box_1">
+          <%= link_to cart_path, class: "btn btn-info btn-lg" do %>
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+            <%= t("cart") %>
+          <% end %>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<div class="ban-top">
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav menu__list">
+          <li class="">
+            <%= link_to t("home_title"), root_path, class: "nav-stylehead" %>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">English Books
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu multi-column columns-3">
+              <div class="agile_inner_drop_nav_info">
+                <div class="col-sm-4 multi-gd-img">
+                  <ul class="multi-column-dropdown">
+                    <li>
+                      <a href="#">Category 1</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-4 multi-gd-img">
+                  <ul class="multi-column-dropdown">
+                    <li>
+                      <a href="#">Category 2</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vietnamese Books
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu multi-column columns-3">
+              <div class="agile_inner_drop_nav_info">
+                <div class="col-sm-6 multi-gd-img">
+                  <ul class="multi-column-dropdown">
+                    <li>
+                      <a href="#">Vietnamese Book 1</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 multi-gd-img">
+                  <ul class="multi-column-dropdown">
+                    <li>
+                      <a href="#">Vietnamese Book 2</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </ul>
+          </li>
+          <li class="">
+            <a class="nav-stylehead" href="#">Faqs</a>
+          </li>
+          <li class="dropdown">
+            <a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Pages
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu agile_short_dropdown">
+              <li>
+                <a href="#">Web Icons</a>
+              </li>
+              <li>
+                <a href="#">Typography</a>
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <%= link_to t("about_title"), about_path, class: "nav-stylehead" %>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>

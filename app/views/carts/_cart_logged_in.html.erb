@@ -1,0 +1,68 @@
+<% if @cart.cart_items.count == 0 %>
+  <p class="text-center">
+    <%= t "please_back" %>
+    <%= link_to t("go_back"), root_path %>
+    <%= t "and_add" %>
+  </p>
+<% else %>
+  <ul>
+    <% if !@cart_item.nil? && @cart_item.errors.any? %>
+      <div class="alert alert-danger">
+        <ul>
+          <% @cart_item.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <table class="table">
+      <thead>
+        <tr>
+          <th><%= t "item" %></th>
+          <th><%= t "price" %></th>
+          <th><%= t "quantity" %></th>
+          <th><%= t "remove" %></th>
+          <th><%= t "total_price" %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @cart.cart_items.each do |cart_item| %>
+          <tr>
+            <td><%= cart_item.book.name %></td>
+            <td><%= number_to_currency(cart_item.book.price) %></td>
+            <td><%= cart_item.quantity %>
+              <span>
+                <%= link_to "",
+                  cart_items_add_quantity_path(id: cart_item, check: 0),
+                  class: "glyphicon glyphicon-plus",
+                  method: :post %>
+              </span>
+              <span>
+                <%= link_to "",
+                  cart_items_reduce_path(id: cart_item, check: 1),
+                  class: "glyphicon glyphicon-minus",
+                  method: :post %>
+              </span>
+            </td>
+            <td>
+              <%= link_to t("remove"),
+                cart_items_delete_path(id:cart_item),
+                method: :delete %>
+            </td>
+            <td>
+              <%= number_to_currency(cart_item.total_price) %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row" colspan="4"><%= t "totals" %></th>
+          <td><%= number_to_currency(@cart.sub_total) %></td>
+        </tr>
+      </tfoot>
+    </table>
+  </ul>
+  <%= button_to t("order"), orders_path(id: @cart.id),
+    class: "btn btn-primary" %>
+<% end %>

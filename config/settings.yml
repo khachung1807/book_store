@@ -1,0 +1,12 @@
+name_max_length: 25
+address_max_length: 255
+phone_number_min_length: 8
+phone_number_max_length: 15
+card_number_min_length: 10
+card_number_max_length: 20
+email_max_length: 255
+password_min_length: 6
+avatar_user_size: 80
+per_page_search: 9
+per_page: 12
+reset_password_time: 2
